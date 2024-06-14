@@ -719,8 +719,8 @@ footer img {
   margin: auto;
   margin-top: 0px;
   display: block;
-  width: 80%;
-  height: auto;
+  width: auto;
+  height: 75%;
   z-index: 5;
   max-width: 800px;
 }
