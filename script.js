@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () //menu
-{
+document.addEventListener("DOMContentLoaded", function () {
+  // Menu
   const hamburger = document.getElementById("hamburger");
   const menuOverlay = document.getElementById("menuOverlay");
   const closeMenu = document.getElementById("closeMenu");
@@ -11,57 +11,45 @@ document.addEventListener("DOMContentLoaded", function () //menu
   closeMenu.addEventListener("click", function () {
     menuOverlay.style.display = "none";
   });
-});
 
-//carousel
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Carousel
   const images = document.querySelectorAll(".carousel img");
   let index = 0;
 
   setInterval(() => {
-    images[index].classList.remove("active");
+    images.forEach((img) => img.classList.remove("active"));
     index = (index + 1) % images.length;
     images[index].classList.add("active");
   }, 5000);
 
-  //background
-  var cards = document.querySelectorAll(".card");
-  var cardColors = ["#090622", "#081803", "#23060b"];
-  var cardContainer = document.getElementById("produits");
+  // background hover
+  const cards = document.querySelectorAll(".card");
+  const cardColors = ["#090622", "#081803", "#23060b"];
+  const cardContainer = document.getElementById("produits");
+  let currentCardIndex = -10;
 
   cards.forEach(function (card, index) {
-    function changeBackgroundColor() {
-      cardContainer.style.backgroundColor = cardColors[index];
-    }
-
-    card.addEventListener("mouseover", function (event) {
-      changeBackgroundColor();
+    card.addEventListener("mouseenter", function () {
+      if (currentCardIndex !== index) {
+        cardContainer.style.backgroundColor = cardColors[index];
+        currentCardIndex = index;
+      }
     });
 
-    card.addEventListener("mouseout", function () {
-      cardContainer.style.backgroundColor = "lastIndexOf";
-    });
-
-    var cardTitle = card.querySelector("h1");
-    var cardParagraph = card.querySelector("p");
-
-    cardTitle.addEventListener("mouseover", function (event) {
-      changeBackgroundColor();
-    });
-
-    cardParagraph.addEventListener("mouseover", function (event) {
-      changeBackgroundColor();
-    });
+    card.addEventListener("mouseleave", function () {});
   });
 
-  //card hover
+  // Card hover effects
   const allCards = document.querySelectorAll(".card");
 
   allCards.forEach((card) => {
     card.addEventListener("mouseenter", () => {
       removeActiveClass();
       card.classList.add("active");
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.classList.remove("active");
     });
   });
 
