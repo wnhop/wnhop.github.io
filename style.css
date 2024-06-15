@@ -44,7 +44,7 @@ nav .onglets {
   margin-right: 70px;
 }
 nav img {
-  height: 100px;
+  height: 80px;
   width: 200px;
 }
 
@@ -340,6 +340,14 @@ footer #contact {
     margin-top: 0px;
     padding-bottom: 75px;
   }
+
+  .card h1 {
+    margin-top: 0px !important;
+  }
+
+  .card p {
+    font-size: 0px;
+  }
 }
 
 /*tablette*/
@@ -354,7 +362,7 @@ footer #contact {
   }
 
   .main {
-    margin-top: -7%;
+    margin-top: 60px;
   }
   nav h1 {
     font-size: 126%;
@@ -390,13 +398,23 @@ footer #contact {
     display: block;
   }
 
+  .card h1 {
+    margin-top: 0px !important;
+  }
+
   footer {
     padding: 30px;
   }
 
   .carousel {
     width: 135% !important;
-    height: auto;
+    height: 300px !important;
+    margin-bottom: -100px !important;
+  }
+
+  .carousel img {
+    height: 400px !important;
+    object-fit: cover !important;
   }
 
   footer h1 {
@@ -474,6 +492,19 @@ footer #contact {
   header {
     margin-top: 0px;
   }
+
+  .card p {
+    font-size: 0px;
+  }
+}
+
+.card h1 {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.card p {
+  color: #000;
 }
 
 .logo {
@@ -553,9 +584,10 @@ footer #contact {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 40px;
   border-bottom: 2px solid #fff;
-  width: 200px;
+  width: 150px;
+  font-family: "wildride";
 }
 
 .card-color-1:hover {
