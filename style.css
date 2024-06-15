@@ -10,7 +10,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: "cooper";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -259,13 +259,13 @@ footer #contact {
   }
 
   .carousel {
-    width: 135% !important;
+    width: 120% !important;
     height: 300px !important;
     margin-bottom: -100px !important;
   }
 
   .carousel img {
-    height: 400px !important;
+    height: 300px !important;
     object-fit: cover !important;
   }
 
@@ -413,12 +413,12 @@ footer #contact {
 
   .carousel {
     width: 135% !important;
-    height: 300px !important;
+    height: 420px !important;
     margin-bottom: -100px !important;
   }
 
   .carousel img {
-    height: 400px !important;
+    height: 420px !important;
     object-fit: cover !important;
   }
 
@@ -538,7 +538,7 @@ footer #contact {
   opacity: 0;
   transition: opacity 0.5s ease;
   width: 100%;
-  height: auto;
+  height: 640px;
   object-fit: cover;
 }
 
