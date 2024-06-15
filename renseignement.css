@@ -3,11 +3,6 @@
   src: url("WildRide.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "cooper";
-  src: url(Cooper\ Regular.ttf) format("truetype");
-}
-
 html,
 body {
   margin: 0;
@@ -15,7 +10,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  font-family: "cooper";
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
